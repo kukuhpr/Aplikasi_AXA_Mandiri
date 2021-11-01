@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_200"
+    tools:context=".Ui.RegistretionUserActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:nestedScrollingEnabled="true">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <RelativeLayout
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/nameTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Registrasi Pengguna"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                            android:id="@+id/btnBack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:outlineAmbientShadowColor="@android:color/transparent"
+                            android:outlineSpotShadowColor="@android:color/transparent"
+                            android:src="@drawable/icons_back"
+                            app:backgroundTint="@color/orange_200"
+                            app:fabSize="mini" />
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/toolbar"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="15dp">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/iv_profileRider"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_centerHorizontal="true"
+                                android:foreground="?attr/selectableItemBackground"
+                                android:src="@drawable/ic_baseline_account_circle_24"
+                                app:civ_border_color="@color/orange_500"
+                                app:civ_border_overlay="true"
+                                app:civ_border_width="3dp" />
+
+                            <ImageView
+                                android:id="@+id/panah2"
+                                android:layout_width="100px"
+                                android:layout_height="100px"
+                                android:layout_gravity="bottom|end"
+                                android:layout_toRightOf="@+id/iv_profileRider"
+                                android:background="@drawable/bulat_putih"
+                                android:src="@drawable/icon_add"
+                                app:tint="@color/orange_200" />
+
+                        </FrameLayout>
+
+                        <!--<de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_profileRider"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="15dp"
+                            android:src="@drawable/ic_baseline_account_circle_24"
+                            app:civ_border_color="@color/black"
+                            app:civ_border_overlay="true"
+                            app:civ_border_width="3dp" />-->
+
+                        <TextView
+                            android:id="@+id/label1_txt"
+                            style="@style/TextAppearance.AppCompat.Headline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Informasi Pribadi"
+                            android:textColor="@color/orange_200"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/namaTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:endIconMode="clear_text"
+                            android:hint="Nama Lengkap"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/orange_200"
+                            app:errorTextAppearance="@style/ErrorTextAppearance">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_namaRider"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:inputType="textPersonName"
+                                android:paddingStart="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="20dp"
+                                android:textColorHighlight="@color/orange_200" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <!--
+                                        <com.rengwuxian.materialedittext.MaterialEditText
+                                            android:id="@+id/edt_namaRider"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Name"
+                                            android:inputType="textPersonName"
+                                            android:text=""
+                                            android:textColor="@color/darkgrey"
+                                            android:textColorHint="@color/darkgrey"
+                                            android:textSize="20sp"
+                                            app:met_baseColor="@color/darkgrey"
+                                            app:met_floatingLabel="highlight"
+                                            app:met_primaryColor="@color/darkgrey"
+                                            app:met_singleLineEllipsis="true" />
+                        -->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/phoneTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:endIconMode="clear_text"
+                            android:hint="Nomor Telepon"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/orange_200">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_noHpRider"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:inputType="phone"
+                                android:paddingStart="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="20dp"
+                                android:textColorHighlight="@color/orange_200" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <!--
+                                        <com.rengwuxian.materialedittext.MaterialEditText
+                                            android:id="@+id/edt_noHpRider"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Phone"
+                                            android:inputType="phone"
+                                            android:text=""
+                                            android:textColor="@color/darkgrey"
+                                            android:textColorHint="@color/darkgrey"
+                                            android:textSize="20sp"
+                                            app:met_baseColor="@color/darkgrey"
+                                            app:met_floatingLabel="highlight"
+                                            app:met_primaryColor="@color/darkgrey"
+                                            app:met_singleLineEllipsis="true" />
+                        -->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/emailTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:endIconMode="clear_text"
+                            android:hint="Email"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/orange_200">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_emailRider"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:inputType="textEmailAddress"
+                                android:paddingStart="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="20dp"
+                                android:textColorHighlight="@color/orange_200" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--
+                                        <com.rengwuxian.materialedittext.MaterialEditText
+                                            android:id="@+id/edt_emailRider"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Email"
+                                            android:inputType="textEmailAddress"
+                                            android:text=""
+                                            android:textColor="@color/darkgrey"
+                                            android:textColorHint="@color/darkgrey"
+                                            android:textSize="20sp"
+                                            app:met_baseColor="@color/darkgrey"
+                                            app:met_floatingLabel="highlight"
+                                            app:met_primaryColor="@color/darkgrey"
+                                            app:met_singleLineEllipsis="true" />
+                        -->
+
+                        <TextView
+                            android:id="@+id/label2_txt"
+                            style="@style/TextAppearance.AppCompat.Headline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Setel kata sandi"
+                            android:textColor="@color/orange_200"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/passwordTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Password"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/orange_200"
+                            app:passwordToggleEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_passRider"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:inputType="textPassword"
+                                android:paddingStart="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="20dp"
+                                android:textColorHighlight="@color/orange_200" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <!--
+                                        <com.rengwuxian.materialedittext.MaterialEditText
+                                            android:id="@+id/edt_passRider"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Password"
+                                            android:inputType="textPassword"
+                                            android:text=""
+                                            android:textColor="@color/darkgrey"
+                                            android:textColorHint="@color/darkgrey"
+                                            android:textSize="20sp"
+                                            app:met_baseColor="@color/darkgrey"
+                                            app:met_floatingLabel="highlight"
+                                            app:met_primaryColor="@color/darkgrey"
+                                            app:met_singleLineEllipsis="true" />
+                        -->
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/conPasswordTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Konfirmasi Password"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/orange_200"
+                            app:passwordToggleEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/edt_conpassRider"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:inputType="textPassword"
+                                android:paddingStart="20dp"
+                                android:paddingTop="20dp"
+                                android:paddingEnd="20dp"
+                                android:textColorHighlight="@color/orange_200" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <!--
+                                        <com.rengwuxian.materialedittext.MaterialEditText
+                                            android:id="@+id/edt_conpassRider"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="Confirm Password"
+                                            android:inputType="textPassword"
+                                            android:text=""
+                                            android:textColor="@color/darkgrey"
+                                            android:textColorHint="@color/darkgrey"
+                                            android:textSize="20sp"
+                                            app:met_baseColor="@color/darkgrey"
+                                            app:met_floatingLabel="highlight"
+                                            app:met_primaryColor="@color/darkgrey"
+                                            app:met_singleLineEllipsis="true" />
+                        -->
+
+                        <Button
+                            android:id="@+id/btn_RegisterRider"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Register"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black" />
+                        <!--android:fontFamily="@font/montserratalternatesmedium"-->
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </ScrollView>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

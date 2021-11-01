@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_200"
+    tools:context=".Ui.HomeUsahaActivity">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/hai_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Hai !"
+                                android:textColor="@color/black"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/nama_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/hai_txt"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Kukuh Primadito"
+                                android:textColor="@color/orange_200"
+                                android:textSize="26sp" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_profile_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/iv_potoUser"
+                                android:layout_width="150px"
+                                android:layout_height="150px"
+                                android:layout_alignParentEnd="true"
+                                android:foreground="?attr/selectableItemBackground"
+                                app:civ_border_color="@color/orange_500"
+                                app:civ_border_overlay="true"
+                                app:civ_border_width="3dp"
+                                android:src="@drawable/ic_baseline_account_circle_24" />
+
+                            <ImageView
+                                android:id="@+id/panah2"
+                                android:layout_width="60px"
+                                android:layout_height="60px"
+                                android:background="@drawable/bulat_putih"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true"
+                                app:tint="@color/orange_200"
+                                android:src="@drawable/icon_arrow_right" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--<TextView
+                        android:id="@+id/hai_txt"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Hai !"
+                        android:textSize="26sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/nama_txt"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Kukuh Primadito"
+                        android:textSize="26sp"
+                        android:textColor="@color/orange_200"
+                        android:textStyle="bold"/>-->
+
+                    <TextView
+                        android:id="@+id/label_txt"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Sekarang jangan khawatir lagi buat kamu mengembangkan usaha derekmu"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/info_cv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:cardCornerRadius="10dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/black"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="50px"
+                                    android:layout_height="80px"
+                                    android:layout_gravity="center"
+                                    app:tint="@color/white"
+                                    android:src="@drawable/icons_check"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|bottom"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_jumlah_kerjaan"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="bottom"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="0"
+                                        android:textColor="@color/white"
+                                        android:textSize="16sp"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_light"
+                                        android:text="Total Kerjaan"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/white"/>
+
+
+                                </LinearLayout>
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="50px"
+                                    android:layout_height="80px"
+                                    app:tint="@color/white"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/icons_driver"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|bottom"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_jumlah_supir"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@+id/poto_liatOrder"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="0"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/white" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_light"
+                                        android:text="Total Supir"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/white"/>
+
+                                </LinearLayout>
+
+
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <RatingBar
+                                    android:id="@+id/ratingBar"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_gravity="center"
+                                    android:theme="@style/RatingBar"
+                                    style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|bottom"
+                                    android:layout_marginBottom="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txt_jumlah_rating"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toRightOf="@+id/poto_liatOrder"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="0"
+                                        android:textSize="16sp"
+                                        android:textColor="@color/white" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_light"
+                                        android:text="Total Rating"
+                                        android:textSize="14sp"
+                                        android:textColor="@color/white"/>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/label1_txt"
+                        style="@style/TextAppearance.AppCompat.Headline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Layanan"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"/>
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/help_cv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:cardCornerRadius="10dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardElevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/poto_liatOrder"
+                                android:layout_width="300px"
+                                android:layout_height="300px"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_undraw_note_list"/>
+
+                            <TextView
+                                android:id="@+id/labelTowNow_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/poto_liatOrder"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Lihat Orderan"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/labelTowNow_txt"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_toRightOf="@+id/poto_liatOrder"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="Untuk melihat orderan derek"
+                                android:textSize="14sp"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/booking_cv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        app:cardCornerRadius="10dp"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardElevation="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/poto_tambahSupir"
+                                android:layout_width="300px"
+                                android:layout_height="300px"
+                                android:padding="10dp"
+                                android:src="@drawable/ic_undraw_add_friends"/>
+
+                            <TextView
+                                android:id="@+id/labelTowBook_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/poto_tambahSupir"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Lihat Supir Derek"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/labelTowBook_txt"
+                                android:layout_toRightOf="@+id/poto_tambahSupir"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="Untuk melihat dan menambah supir derek"
+                                android:textSize="12sp"
+                                android:textColor="@color/black"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

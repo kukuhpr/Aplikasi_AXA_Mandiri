@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    tools:context=".Ui.RequestDriverActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:backgroundTint="@color/orange_200"
+        android:outlineAmbientShadowColor="@android:color/transparent"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        android:src="@drawable/icons_back"
+        app:fabSize="mini"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            mapbox:mapbox_cameraTargetLat="-7.431391"
+            mapbox:mapbox_cameraTargetLng="109.247833"
+            mapbox:mapbox_cameraTilt="30"
+            mapbox:mapbox_cameraZoom="15"/>
+        <View
+            android:id="@+id/fill_maps"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/map_darker"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/search_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_confirm_derek"/>
+
+        <include layout="@layout/layout_confirm_pickup"/>
+
+        <include layout="@layout/layout_finding_your_driver"/>
+
+        <include layout="@layout/layout_driver_info"/>
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>

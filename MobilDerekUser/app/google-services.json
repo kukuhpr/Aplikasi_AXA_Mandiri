@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "111021607579",
+    "firebase_url": "https://aplikasi-mobil-derek-default-rtdb.firebaseio.com",
+    "project_id": "aplikasi-mobil-derek",
+    "storage_bucket": "aplikasi-mobil-derek.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111021607579:android:ec4f14737ca244f8e7543e",
+        "android_client_info": {
+          "package_name": "com.example.mobilderekdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111021607579-dbm1a19dn094fcvdvr76b92id27bj8jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQ9Hds6rUWPn7cT1akC3df38cbwE7PPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111021607579-dbm1a19dn094fcvdvr76b92id27bj8jk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111021607579:android:52344451914ea25ce7543e",
+        "android_client_info": {
+          "package_name": "com.example.mobilderekuser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "111021607579-dbm1a19dn094fcvdvr76b92id27bj8jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAQ9Hds6rUWPn7cT1akC3df38cbwE7PPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "111021607579-dbm1a19dn094fcvdvr76b92id27bj8jk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

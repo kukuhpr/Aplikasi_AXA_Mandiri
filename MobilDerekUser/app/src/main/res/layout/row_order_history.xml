@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/RL_cv_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_potoUser"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                app:civ_border_color="@color/orange_500"
+                app:civ_border_overlay="true"
+                app:civ_border_width="3dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iv_potoUser"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/namaDriver_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Memuat..."
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/namaPerusahaan_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namaDriver_TV"
+                    android:layout_toRightOf="@+id/iv_potoUser"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Memuat..."
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/date_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="11/03/21"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/status_complete_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/date_TV"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icons_verified"
+                    app:tint="@color/btnSignIn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Selesai"
+                    android:textColor="@color/btnSignIn"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/status_cancel_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/date_TV"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="40px"
+                    android:layout_height="40px"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icons_verified"
+                    app:tint="@color/merah" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Gagal"
+                    android:textColor="@color/merah"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RL_cv_history"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:id="@+id/rl_profile_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/background_garis_kuning"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/LL_Awal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_origin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/lokasi_jemput"
+                        android:textSize="10sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_originPickup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/demo_address"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/LL_Awal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txt_tujuan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/lokasi_tujuan"
+                        android:textSize="10sp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/txt_destinationRider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/demo_destionation"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/orderId_TV"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:visibility="gone"
+                    android:fontFamily="@font/poppins_medium"
+                    android:maxLines="1"
+                    android:text="Order: 12245"
+                    android:textColor="@color/black" />
+
+                <!--<TextView
+                    android:id="@+id/date_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/nextIV"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="11/03/21"
+                    android:textColor="@color/black" />-->
+
+                <!--<TextView
+                    android:id="@+id/namaDriver_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date_TV"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="ABC Shop"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/namaPerusahaan_TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namaDriver_TV"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Nama usaha"
+                    android:textColor="@color/black" />-->
+
+                <!--<TextView
+                    android:id="@+id/statusTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namaDriver_TV"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/nextIV"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="In Progress"
+                    android:textColor="@color/btnSignIn"
+                    android:textStyle="bold" />-->
+
+
+                <!--<ImageView
+                    android:id="@+id/nextIV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/orderId_TV"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_arrow_right_24" />-->
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/pilih_register"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textAlignment="center"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/user_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/poto_user"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_undraw_mobile_user_7oqo"/>
+
+                <TextView
+                    android:id="@+id/labelUser_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/poto_user"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Register Customer"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelUser_txt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/poto_user"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Anda dapat menikmati fasilitas dari mitra kami!"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/supir_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/poto_supir"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_undraw_city_driver"/>
+
+                <TextView
+                    android:id="@+id/labelSupirNow_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/poto_supir"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Register Supir Derek"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelSupirNow_txt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/poto_supir"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Anda dapat meningkatkan layanan usaha Anda!"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/usaha_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="10dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/poto_liatOrder"
+                    android:layout_width="300px"
+                    android:layout_height="300px"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_undraw_financial_data_es63"/>
+
+                <TextView
+                    android:id="@+id/labelTowNow_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/poto_liatOrder"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Register Pemilik Usaha"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/labelTowNow_txt"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/poto_liatOrder"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Anda dapat meningkatkan layanan usaha Anda!"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Tarik.in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--<string name="mapbox_access_token">sk.eyJ1Ijoia3VrdWhwciIsImEiOiJja25oZmM2dHIwZGtzMm5wZ2FmdXR3dHNxIn0.AslgiLNyQFfm_sOvDlS7Qg</string>-->
+    <string name="mapbox_access_token">pk.eyJ1Ijoia3VrdWhwciIsImEiOiJja25oZjF3a3gya3B4MnFsY3p4N2R0b2IwIn0.hsIUXq6lrTtSWPgcmmFpyA</string>
+    <string name="navigation_guidance_day" translatable="false">mapbox://styles/mapbox/navigation-guidance-day-v4</string>
+    <string name="drivers_not_found">Mobil derek tidak ditemukan</string>
+    <string name="not_found_key">Tidak menemukan kunci</string>
+    <string name="logout_message">Apakah anda yakin untuk keluar dari aplikasi mobil derek?</string>
+    <string name="btn_cancel">Batalkan</string>
+    <string name="btn_keluar">Keluar</string>
+    <string name="welcome">Diantar kemana hari ini?</string>
+    <string name="pay_by_cash">Bayar dengan tunai</string>
+    <string name="confirm_derek">Konfirmasi derek</string>
+    <string name="confirm_pickup_spot">Konfirmasi tempat penjemputan</string>
+    <string name="finding_driver">Mencari supir derek</string>
+    <string name="token_not_found">Tidak menemukan token supir</string>
+    <string name="request_driver_failed">Gagal untuk mengirim pesan ke supir</string>
+    <string name="no_drivers_accept_request">Tidak ada supir derek yang menerima pesanan Anda</string>
+    <string name="trip_not_found">Tidak menemukan perjalanan dengan key : </string>
+    <string name="driver_name_example">Ujang Supir Derek</string>
+    <string name="ascii_dot">■</string>
+    <string name="pickupNotes">Catatan pickup</string>
+    <string name="enter_current_pass">Masukkan password yang digunakan</string>
+    <string name="password_length">Password harus 6 karakter</string>
+    <string name="pass_updated">Ganti password berhasil</string>
+    <string name="pass_failed">Ganti password gagal</string>
+    <string name="update_password">Ganti Password</string>
+    <string name="btn_updatePass">Ganti Password</string>
+    <string name="trip_detail">Detail Perjalanan</string>
+    <string name="demo_address">Jalan Pramuka No 164 Purwokerto</string>
+    <string name="demo_destionation">Bengkel Suzuki Purwokerto</string>
+    <string name="tanda_terima">Tanda Terima</string>
+    <string name="base_fare">Tarif dasar</string>
+    <string name="distance">Jarak Tempuh: </string>
+    <string name="total_harga">Rp 640.000</string>
+    <string name="harga_total">Total Harga</string>
+    <string name="time">Time: </string>
+    <string name="reviews_sukses">Reviewmu sudah masuk</string>
+    <string name="lokasi_jemput">Alamat Jemput</string>
+    <string name="lokasi_tujuan">Alamat Tujuan</string>
+    <string name="nama_usaha">Memuat...</string>
+    <string name="nama_driver">Memuat...</string>
+    <string name="lupa_password">Lupa Password ?</string>
+    <string name="komplit">Selesai</string>
+
+    <string name="Bertugas">Bertugas</string>
+    <string name="online_status">Online</string>
+    <string name="tugas_status">Bertugas</string>
+    <string name="offline_status">Offline</string>
+    <string name="decline">Batalkan</string>
+    <string name="complete_derek">Selesai Derek</string>
+    <string name="start_derek">Mulai Derek</string>
+    <string name="accept_failed">Gagal menerima pesanan</string>
+    <string name="driver_arrived">Supir derek telah sampai</string>
+    <string name="your_driver_arrived">Supir derekmu telah sampai dilokasi penjemputan</string>
+    <string name="complete_trip_failed">Gagal mengirim pesan perjalanan selesai</string>
+    <string name="complete_trip_success">Berhasil mengirim pesan perjalanan selesai</string>
+    <string name="decline_failed">Batalkan pesanan gagal</string>
+    <string name="decline_success">Batalkan pesanan berhasil</string>
+    <string name="rider_not_found">"Tidak menemukan pelanggan dengan Kunci: "</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="tag_line">Kami akan membantu Anda Untuk menderek mobil menggunakan layanan online!</string>
+    <string name="pilih_register">Pilih Register</string>
+    <string name="duration">Waktu Tempuh</string>
+
+</resources>

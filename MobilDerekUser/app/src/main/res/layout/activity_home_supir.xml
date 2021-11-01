@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    tools:context=".Ui.HomeSupirActivity">
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="-7.431391"
+        mapbox:mapbox_cameraTargetLng="109.247833"
+        mapbox:mapbox_cameraTilt="30"
+        mapbox:mapbox_cameraZoom="15" />
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_decline"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/decline"
+        android:textColor="@color/black"
+        app:chipBackgroundColor="@color/orange_200"
+        app:chipIcon="@drawable/icon_cancel"
+        app:chipIconSize="18dp"/>
+
+
+
+
+    <!--LAYOUT PROFILE DEREK-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_profileDriver"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_potoDriver"
+                        android:layout_width="180px"
+                        android:layout_height="180px"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_baseline_account_circle_24"
+                        app:civ_border_color="@color/orange_500"
+                        app:civ_border_overlay="true"
+                        app:civ_border_width="3dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_namaDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/iv_potoDriver"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Nama Driver"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/txt_nama_perusahaan"
+                        android:layout_toRightOf="@+id/iv_potoDriver"
+                        android:layout_below="@+id/txt_namaDriver"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Nama Usaha"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/txt_noHpDriver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/iv_potoDriver"
+                        android:layout_below="@+id/txt_nama_perusahaan"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="0812345678"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+
+                    <ImageView
+                        android:id="@+id/panah2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/icon_arrow_right"
+                        app:tint="@color/orange_200"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/info_cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                app:cardCornerRadius="10dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="50px"
+                            android:layout_height="80px"
+                            android:layout_gravity="center"
+                            app:tint="@color/white"
+                            android:src="@drawable/icons_check"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|bottom"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_jumlah_kerjaan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_toRightOf="@+id/poto_liatOrder"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="0"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="Total Kerjaan"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="center"
+                            android:theme="@style/RatingBar"
+                            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|bottom"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/txt_jumlah_rating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@+id/poto_liatOrder"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="0"
+                                android:textSize="16sp"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_light"
+                                android:text="Total Rating"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!--LAYOUT ACCEPT REQUEST-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_accept"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/orange_200"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_type_derek"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Derek"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:gravity="center">
+
+                    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                        android:id="@+id/circularProgressBar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cpb_background_progressbar_color="@color/black"
+                        app:cpb_background_progressbar_width="3dp"
+                        app:cpb_progress="0"
+                        app:cpb_progress_direction="to_right"
+                        app:cpb_progress_max="100"
+                        app:cpb_progressbar_color="@color/orange_200"
+                        app:cpb_progressbar_width="3dp"
+                        app:cpb_round_border="false"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/iv_profileImage"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_baseline_account_circle_24"
+                        android:tint="@color/white"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txt_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="40.000"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/txt_estimate_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="2 min"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/txt_estimate_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="10 meter"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!--LAYOUT START UBER-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_start_uber"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+
+                <ImageView
+                    android:id="@+id/img_start_derek"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_baseline_account_circle_24"/>
+
+                <TextView
+                    android:id="@+id/txt_start_derek_estimate_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Min"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/img_start_derek"
+                    android:fontFamily="@font/poppins_medium"/>
+
+                <TextView
+                    android:id="@+id/txt_start_derek_estimate_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.5 km"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/img_start_derek"
+                    android:fontFamily="@font/poppins_medium"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_format_list_bulleted_24"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/darkgrey"/>
+
+            <LinearLayout
+                android:id="@+id/layout_notify_rider"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_notify_rider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="02:00"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <ProgressBar
+                    android:id="@+id/progress_notify"
+                    android:min="0"
+                    android:max="150"
+                    android:indeterminate="false"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_phone_call"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_baseline_call_24"/>
+
+                <TextView
+                    android:id="@+id/txt_rider_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Rider"
+                    android:textColor="@color/black"
+                    android:textSize="22sp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_bold"/>
+
+                <ImageView
+                    android:id="@+id/img_whatsapp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_icons_whatsapp"/>
+
+
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.kusu.library.LoadingButton
+                    android:id="@+id/btn_start_derek"
+                    android:enabled="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/start_derek"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    app:lb_buttonColor="@color/orange_200"
+                    app:lb_isCircular="false"/>
+
+                <com.kusu.library.LoadingButton
+                    android:id="@+id/btn_complete_derek"
+                    android:enabled="false"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/complete_derek"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    app:lb_buttonColor="@color/orange_200"
+                    app:lb_isCircular="false"/>
+
+
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</FrameLayout>
