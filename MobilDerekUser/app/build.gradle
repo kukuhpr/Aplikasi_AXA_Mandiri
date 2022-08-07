@@ -27,6 +27,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
@@ -54,6 +55,9 @@ dependencies {
     implementation 'com.google.android.gms:play-services-location:16.0.0'
 
     //MAPBOX
+
+
+
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.1.0'
 
     //implementation 'com.mapbox.mapboxsdk:mapbox-sdk-services:5.4.1'

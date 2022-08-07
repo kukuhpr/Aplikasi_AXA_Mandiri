@@ -4,7 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <!--<string name="mapbox_access_token">sk.eyJ1Ijoia3VrdWhwciIsImEiOiJja25oZmM2dHIwZGtzMm5wZ2FmdXR3dHNxIn0.AslgiLNyQFfm_sOvDlS7Qg</string>-->
-    <string name="mapbox_access_token">pk.eyJ1Ijoia3VrdWhwciIsImEiOiJja25oZjF3a3gya3B4MnFsY3p4N2R0b2IwIn0.hsIUXq6lrTtSWPgcmmFpyA</string>
+    <string name="mapbox_access_token">sk.eyJ1Ijoia3VrdWhwciIsImEiOiJjbDZpeHBybTEwaHEyM2pteWY0ajB4eTVnIn0.AIuC-xxAXhH34s--rnO0yQ</string>
     <string name="navigation_guidance_day" translatable="false">mapbox://styles/mapbox/navigation-guidance-day-v4</string>
     <string name="drivers_not_found">Mobil derek tidak ditemukan</string>
     <string name="not_found_key">Tidak menemukan kunci</string>

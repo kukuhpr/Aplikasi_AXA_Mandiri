@@ -5,7 +5,7 @@ buildscript {
         google()
         jcenter()
         mavenCentral()
-        maven { url 'https://mapbox.bintray.com/mapbox' }
+        //maven { url 'https://mapbox.bintray.com/mapbox' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:4.2.1'
@@ -23,13 +23,13 @@ allprojects {
         jcenter()
         maven { url "https://oss.jfrog.org/libs-snapshot" }
         maven { url 'https://jitpack.io'}
-        maven{
+        maven{0
             url 'https://maven.google.com'
         }
-        maven{
+        /*maven{
             url 'https://dl.bintray.com/glomadrian/maven'
-        }
-        maven { url 'https://mapbox.bintray.com/mapbox' }
+        }*/
+        //maven { url 'https://mapbox.bintray.com/mapbox' }
         maven {
             url 'https://api.mapbox.com/downloads/v2/releases/maven'
             authentication {
@@ -38,9 +38,9 @@ allprojects {
             credentials {
                 // Do not change the username below.
                 // This should always be `mapbox` (not your username).
-                username = 'mapbox'
+                username = "mapbox"
                 // Use the secret token you stored in gradle.properties as the password
-                password = project.properties['pk.eyJ1Ijoia3VrdWhwciIsImEiOiJja25oZjF3a3gya3B4MnFsY3p4N2R0b2IwIn0.hsIUXq6lrTtSWPgcmmFpyA'] ?: ""
+                password =  "sk.eyJ1Ijoia3VrdWhwciIsImEiOiJjbDZpeHBybTEwaHEyM2pteWY0ajB4eTVnIn0.AIuC-xxAXhH34s--rnO0yQ"
             }
         }
     }

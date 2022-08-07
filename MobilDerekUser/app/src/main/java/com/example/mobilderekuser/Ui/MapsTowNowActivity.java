@@ -1064,8 +1064,11 @@ public class MapsTowNowActivity extends AppCompatActivity implements OnMapReadyC
         loadAvailableDriver();
     }
 
+
+
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             case LOCATION_REQUEST_CODE: {
                 if (grantResults.length > 0) {

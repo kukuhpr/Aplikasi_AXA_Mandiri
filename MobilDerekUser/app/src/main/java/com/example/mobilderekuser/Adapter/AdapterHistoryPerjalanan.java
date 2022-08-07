@@ -126,6 +126,7 @@ public class AdapterHistoryPerjalanan extends RecyclerView.Adapter<AdapterHistor
 
         //Ui View
         //private ImageView IV_photoDriver;
+        
         private CircleImageView potoUser_iv;
         private ImageView status_iv;
         private LinearLayout layout_status_complete, layout_status_cancel;
