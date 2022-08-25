@@ -274,8 +274,7 @@ public class RegisterSupirActivity extends AppCompatActivity implements IFirebas
     private void saverFirebaseData() {
         // save with poto
         FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-
-
+        
         //name and path of poto
         String filePathAndName = "profile_images/" + "" + firebaseAuth.getUid();
         //upload poto

@@ -16,4 +16,6 @@ public class RetrofitClient {
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build() : instance;
     }
+
+
 }
